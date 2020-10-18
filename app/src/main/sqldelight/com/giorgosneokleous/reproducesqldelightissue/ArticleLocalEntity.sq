@@ -1,0 +1,12 @@
+CREATE TABLE articleLocalEntity (
+  articleId INTEGER NOT NULL,
+  title TEXT NOT NULL
+);
+
+CREATE INDEX hockeyPlayer_full_name ON articleLocalEntity(title);
+
+INSERT INTO articleLocalEntity (articleId, title)
+VALUES (1, 'Title 1');
+
+selectAllFavouriteArticles:
+SELECT * FROM articleLocalEntity;
